@@ -37,7 +37,9 @@ void setServoState(){ // ESTABLECE LA POSICION DE CADA SERVOMOTOR E IMPRIME EN P
 
     deg_1 = map(deg_1, 0, 1023, 180, 0);
     servo_1.write(deg_1);
-    Serial.println(deg_1);
+    Serial.print(deg_1);
+
+    Serial.print(" - ");
     
     deg_2 = map(deg_2, 0, 1023, 180, 0);
     servo_2.write(deg_2);
